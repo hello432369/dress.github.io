@@ -1,39 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-cn">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>裙源源 - 连衣裙</title>
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
-    <link rel="shortcut icon" href="/favicon.ico">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
-    <link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm-extend.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>裙源源 | 连衣裙主题公园</title>
+    <script src="https://cdn.bootcss.com/p5.js/0.8.0/p5.min.js"></script>
+    <script src="https://cdn.bootcss.com/dat-gui/0.7.6/dat.gui.min.js"></script>
+    <script src="https://cdn.bootcss.com/p5.js/0.8.0/addons/p5.dom.min.js"></script>
+    <script language="javascript" type="text/javascript" src="test1.js"></script>
+
+    <style>
+        canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+    </style>
 </head>
 
 <body>
-    <!-- page集合的容器，里面放多个平行的.page，其他.page作为内联页面由路由控制展示 -->
-    <div class="page-group">
-        <!-- 单个page ,第一个.page默认被展示-->
-        <div class="page page-current" id='router'>
-            <!-- 标题栏 -->
-            <header class="bar bar-nav">
-                <h1 class="title">嘿！我可能喜欢上你了</h1>
-            </header>
-        </div>
-    </div>
-
-    <script type='text/javascript' src='//g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
-    <script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
-    <script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm-extend.min.js' charset='utf-8'></script>
-    <!-- 默认必须要执行$.init(),实际业务里一般不会在HTML文档里执行，通常是在业务页面代码的最后执行 -->
-    <script>
-        $.init()
-
-    </script>
-
+    <canvas></canvas>
 </body>
 
 </html>
